@@ -1400,6 +1400,9 @@
 	document.body.onclick = function () {
 		audio.play();
 	}
+	document.body.touchstart = function () {
+		audio.play();
+	}
 
         fetch('editjs')
             .then(res => res.text())
