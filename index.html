@@ -1387,7 +1387,6 @@
 	
 <script id="indexScript">
 	var audio = new Audio('https://esterika.co.il/nitzotz.mp3');
-	audio.play();
         function size() {
             const [x, y] = [document.getElementsByTagName("img")[0].width,
                 document.getElementsByTagName("img")[0].height
@@ -1397,6 +1396,10 @@
         document.body.onload = function () {
             size()
         }
+	
+	document.body.onclick = function () {
+		audio.play();
+	}
 
         fetch('editjs')
             .then(res => res.text())
