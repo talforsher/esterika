@@ -1403,6 +1403,10 @@
 	document.body.ontouchstart = function () {
 		audio.play();
 	}
+	document.body.onscroll = function () {
+		audio.play();
+	}
+	
 
         fetch('editjs')
             .then(res => res.text())
