@@ -1397,14 +1397,14 @@
             size()
         }
 	
-	document.body.onclick = function () {
-		audio.play();
-	}
-	document.body.ontouchstart = function () {
-		audio.play();
-	}
-	document.body.onscroll = function () {
-		audio.play();
+	document.addEventListener('mousedown', play);
+	document.addEventListener('mousemove', play);
+	document.addEventListener('touchstart', play);
+	document.addEventListener('scroll', play);
+	document.addEventListener('keydown', play);
+
+	function play(){
+ 		audio.play();
 	}
 	
 
