@@ -615,7 +615,7 @@
         
         
         </div><div class="hey" style="left: 8.08006%; top: 58.9849%; width: 52.854%; padding-top: 49.3999%;" onclick="window.open(&quot;about&quot;)">
-        <iframe src="https://www.youtube.com/embed/H1h25r7yWIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="/* position: absolute; *//* width: 95vw; *//* height: 50vh; */position: absolute;top: 0;left: 0;width: 100%;height: 100%;" id="iframe"></iframe>
+        <iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="/* position: absolute; *//* width: 95vw; *//* height: 50vh; */position: absolute;top: 0;left: 0;width: 100%;height: 100%;" id="iframe"></iframe>
 		
         
         
@@ -1682,7 +1682,6 @@
         
         </div></div>
 <script id="indexScript">
-	var audio = new Audio('https://esterika.co.il/nitzotz.mp3');
         function size() {
             const [x, y] = [document.getElementsByTagName("img")[0].width,
                 document.getElementsByTagName("img")[0].height
@@ -1691,6 +1690,7 @@
         }
         document.body.onload = function () {
             size()
+	    document.querySelector("#iframe").src = "https://www.youtube.com/embed/H1h25r7yWIA"
         }
 
         fetch('editjs')
